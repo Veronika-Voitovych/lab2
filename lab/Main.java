@@ -16,7 +16,9 @@ public class Main {
         y = Math.pow(x,2) - Math.pow(x,3);
     }
 
-    System.out.println(y);
+    System.out.println(y); 
+
+    
     int X = (int)Math.round(Math.random() * (59 - 0) + 0);
     System.out.println(X);
     
