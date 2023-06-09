@@ -1,56 +1,52 @@
-package lab;
-
+package lab_2;
 
 public class Main {
-    public static void main(String[] args){
-    System.out.println("input number");
-    Count num = new Count();
-    double x = num.x;
-    double y = 0;
+    public static void main(String[] args) {
+        System.out.println("---------------------------TASK-1--------------------------------------");
 
-    if( x < 0){
-        y = Math.pow( Math.sin(x),2) -  Math.pow(Math.cos(x),2);
-    } else if( 0 <=x && x <= 2){
-        y = Math.log(3*x + 2);
-    } else if(x > 2){
-        y = Math.pow(x,2) - Math.pow(x,3);
+        Task1 task1 = new Task1(6, 8, 2);
+        System.out.println(task1.main_task1());
+
+        System.out.println("---------------------------TASK-1--------------------------------------");
+
+        System.out.println("---------------------------TASK-2--------------------------------------");
+
+        Task2 task2 = new Task2(3, 4);
+        System.out.println(task2.main_task2());
+
+        System.out.println("---------------------------TASK-2--------------------------------------");
+
+        System.out.println("---------------------------TASK-3--------------------------------------");
+
+        Task3 task3 = new Task3(6);
+        System.out.println(task3.main_task3_1());
+        System.out.println(task3.main_task3_2());
+
+        System.out.println("---------------------------TASK-3--------------------------------------");
+
+        System.out.println("---------------------------TASK-4--------------------------------------");
+
+        Task4 task4 = new Task4(3);
+        System.out.println(task4.main_task4());
+
+        System.out.println("---------------------------TASK-4--------------------------------------");
+
+        System.out.println("---------------------------TASK-5--------------------------------------");
+
+        Task5 task5 = new Task5(3,12,3);
+        System.out.println(task5.main_task5_1());
+        System.out.println(task5.main_task5_2());
+        System.out.println(task5.main_task5_3());
+        System.out.println(task5.main_task5_4());
+        System.out.println(task5.main_task5_5());
+        System.out.println(task5.main_task5_6());
+
+        System.out.println("---------------------------TASK-5--------------------------------------");
+        for (int i=0;i<3;i++){
+            for (int j=0;j<60;j++){
+                System.out.println(i + "h"+" "+j+""+"min");
+            }
+        }
     }
 
-    System.out.println(y); 
-
-    
-    int X = (int)Math.round(Math.random() * (59 - 0) + 0);
-    System.out.println(X);
-    
-    int n = 0;
-
-    if( X <= 15){
-        n = 1;
-    } else if (X >= 16 && X <=30){
-        n = 2;
-    } else if (X >= 31 && X <=45){
-        n = 3;
-    } else if(X >= 46&& X <=59){
-        n = 4;
-    }
-
-    switch(n){
-        case 1:
-            System.out.println("Перша чверть");
-            break;
-        case 2:
-            System.out.println("Друга чверть");
-            break;
-        case 3:
-            System.out.println("Третя чверть");
-            break;
-        case 4:
-            System.out.println("Четверта чверть");
-            break;
-        default:
-            System.out.println("Помилка");
-    }}
-
-    }
-
-
+}
